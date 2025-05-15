@@ -4,7 +4,7 @@ import pickle
 import pandas as pd
 
 # Inisialisasi FastAPI
-app = FastAPI(title="Student GPA Prediction API")
+app = FastAPI(title="Customer Clusters Prediction API")
 
 # Load model
 with open("Kmeans_Model.pkl", "rb") as f:
