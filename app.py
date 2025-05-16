@@ -21,7 +21,7 @@ with open("pca.pkl", "rb") as f:
 # Definisikan input data
 class data(BaseModel):
     NoTransaksi: int = Field(..., example=5555, description="Nomor Transaksi")
-    Outlet: str = Field(..., example="cendana samarinda", description="Outlet dimana customer membeli produk")
+    Outlet: str = Field(..., example="cendana smd", description="Outlet dimana customer membeli produk")
     TotalQuantity: int = Field(..., example=4, description="Total kuantitas yang dibeli dalam 1 transaksi")
     TotalPembelian: int = Field(..., example=36000, description="Total pembelian dalam 1 transaksi")
     AvgHarga: float = Field(..., example=4500.0, description="Rata-rata harga produk dalam 1 transaksi")
